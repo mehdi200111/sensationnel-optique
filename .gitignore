@@ -86,6 +86,12 @@ Thumbs.db
 *.tgz
 *.7z
 
+# Executables
+*.exe
+*.msi
+*.dmg
+*.pkg
+
 # Lock files (keep package-lock.json but ignore others)
 yarn.lock
 
