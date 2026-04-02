@@ -1,0 +1,41 @@
+/* Forcer le scroll en haut pour chaque nouvelle page */
+html {
+  scroll-behavior: auto;
+  scroll-padding-top: 0;
+}
+
+body {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
+
+/* S'assurer que le scroll commence en haut */
+#root {
+  min-height: 100vh;
+  scroll-margin-top: 0;
+}
+
+/* Empêcher le zoom automatique sur mobile pour tous les inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input:not([type]),
+textarea,
+select {
+  font-size: 16px !important;
+  -webkit-text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+
+/* Conserver les tailles personnalisées pour les éléments spécifiques */
+input.small-input,
+input.input-small,
+.small-input input,
+.input-small input {
+  font-size: 14px !important;
+}

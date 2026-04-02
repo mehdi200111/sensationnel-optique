@@ -1,0 +1,31 @@
+/* Prevent translation of Material Symbols icons */
+.material-symbols-outlined {
+  translate: no;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Ensure cart icon is not affected by translation */
+.cart-icon,
+.cart-button .material-symbols-outlined,
+header .material-symbols-outlined {
+  translate: no !important;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
+}
+
+/* Prevent Google Translate from modifying the icon */
+:not(.skiptranslate) > .material-symbols-outlined,
+.material-symbols-outlined:not(.skiptranslate) {
+  display: inline-block !important;
+  font-family: 'Material Symbols Outlined' !important;
+  translate: no !important;
+}
+
+/* Additional protection against translation systems */
+[data-translate="no"] .material-symbols-outlined,
+.no-translate .material-symbols-outlined {
+  translate: no !important;
+}
