@@ -82,6 +82,9 @@ Thumbs.db
 # Archive files
 *.rar
 *.zip
+*.tar.gz
+*.tgz
+*.7z
 
 # Lock files (keep package-lock.json but ignore others)
 yarn.lock
