@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "eyewear-pro-v2/dist",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "rootDirectory": "eyewear-pro-v2"
+  "builds": [
+    {
+      "src": "eyewear-pro-v2/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/eyewear-pro-v2/dist/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/eyewear-pro-v2/dist/index.html"
+    }
+  ]
 }
