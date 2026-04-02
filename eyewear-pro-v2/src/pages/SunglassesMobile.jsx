@@ -12,7 +12,7 @@ import ProgressIndicator from '../components/ProgressIndicator.jsx';
 
 import OptimizedImage from '../components/OptimizedImage.jsx';
 
-import './components/icon-fix.css';
+import '../components/icon-fix.css';
 
 
 
